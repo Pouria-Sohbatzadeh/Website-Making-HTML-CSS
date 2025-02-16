@@ -1,0 +1,256 @@
+@import url(reset.css);
+@import url(responsive.css);
+@import url(color.css);
+@import url(font.css);
+@import url(utility.css);
+
+.header {
+    width: 100%;
+    height: 44px;
+
+    background-color: var(--header_blue);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 10px 0px 0px;
+}
+
+.header__left {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__left_input {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.header__left_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    height: 44px;
+    width: 48px;
+}
+
+.header__left_input:checked ~ .header__left_label {
+    background-color: var(--dark_blue);
+}
+
+.bars {
+    width: 28px;
+
+    border-top: 2px solid white;
+}
+
+.header__left_menu {
+    position: absolute;
+
+    top: 100%;
+    left: 0px;
+
+    width: 351.3px;
+    height: 783px;
+
+    display: none;
+
+    background-color: var(--dark_blue);
+}
+
+.header__left_input:checked ~ .header__left_menu {
+    display: flex;
+}
+
+.header__right {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    height: 44px;
+}
+
+.random_buttons_paths {
+    display: flex;
+    align-items: center;
+
+    filter: brightness(90%);
+}
+
+.random_buttons_paths:hover {
+    filter: brightness(100%);
+}
+
+.header__right_buttons {
+    display: flex;
+    gap: 0px;
+}
+
+.random_button {
+    width: 73px;
+    height: 33px;
+
+    padding-right: 7px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #D6CFBA;
+
+    border: none;
+}
+
+.header__trope_button_circle, .header__media_button_circle {
+    height: 35px;
+    width: 35px;
+
+    border-radius: 100%;
+
+    position: relative;
+
+    right: 13px;
+}
+
+.header__trope_button_circle {
+    background-color: #1B6284;
+}
+
+.header__media_button_circle {
+    background-color: #791125;
+}
+
+.header__right_account_phone {
+    position: relative;
+}
+
+.header__account_phone_input {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.header__account_phone_label {
+    height: 33px;
+    width: 33px;
+
+    background-color: var(--dark_blue);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #CCCDCB;
+
+    cursor: pointer;
+}
+
+.header__account_phone_box {
+    display: none;
+
+    height: 531px;
+    width: 336px;
+
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%, 0px);
+
+    background-color: #fff; 
+
+    border-radius: 8px;
+}
+
+.header__account_phone_closeBox {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 100%;
+
+    background-color: #fff; 
+
+    position: absolute;
+
+    left: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1px 0px 0px 1px;
+}
+
+.closeCross {
+    height: 1px;
+    width: 23px;
+
+    border: 2px solid var(--header_blue);
+
+    position: absolute;
+}
+
+.closeCrossI {
+    rotate: 45deg;
+}
+
+.closeCrossII {
+    rotate: -45deg;
+}
+
+.header__account_phone_input:checked ~ .header__account_phone_box {
+    display: flex;
+
+    position: fixed;
+}
+
+.header__right_account_desktop {
+    display: none;
+}
+
+.header__right_search {
+    display: none;
+}
+
+.search {
+    width: 100%;
+    height: 124px;
+
+    background-color: var(--header_blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example {
+    position: relative;
+}
+
+.example__input {
+    position: absolute;
+
+    height: 0;
+    width: 0;
+
+    opacity: 0;
+}
+
+.example__text {
+    cursor: pointer;
+}
+
+.example__input:checked ~ .example__text {
+    color: red;
+}

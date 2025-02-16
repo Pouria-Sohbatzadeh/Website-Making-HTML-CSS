@@ -1,0 +1,15 @@
+@import url(./reset.css);
+
+.normal-table {
+    background-color: gold;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.vertical-table {
+    text-align: left;
+}
+
+.rtl-tabel {
+    direction: rtl;
+}

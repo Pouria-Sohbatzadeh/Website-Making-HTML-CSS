@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Submenu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <ul class="menu">
+
+        <li class="menu__option">
+            <span>1</span>
+        </li>
+        
+        <li class="menu__option">
+            <span>2</span>
+        </li>
+        
+        <li class="menu__option menu__option-submenuHolder">
+            <span>3</span>
+
+            <ul class="menu__submenu">
+                <li>3.1</li>
+                <li>3.2</li>
+                <li>3.3</li>
+            </ul>
+        </li>
+        
+        <li class="menu__option">
+            <span>4</span>
+        </li>
+        
+    </ul>
+
+    <ul class="menuII">
+
+        <li class="menuII__option">
+            <span>4</span>
+        </li>
+        
+        <li class="menuII__option">
+            <span>5</span>
+        </li>
+        
+        <li class="menuII__option menuII__option-submenuHolder">
+            <input type="checkbox" id="submenu" class="menuII_submenu-input">
+
+            <label for="submenu"><span>6</span></label>
+
+            <ul class="menuII__submenuII">
+                <li>6.1</li>
+                <li>6.2</li>
+                <li>6.3</li>
+            </ul>
+        </li>
+        
+        <li class="menuII__option">
+            <span>7</span>
+        </li>
+        
+    </ul>
+    
+</body>
+</html>

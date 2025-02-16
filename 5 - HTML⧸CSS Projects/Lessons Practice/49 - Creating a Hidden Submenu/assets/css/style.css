@@ -1,0 +1,44 @@
+@import url(./reset.css);
+
+.menu__option {
+    list-style-type: disc;
+}
+
+.menu__option-submenuHolder {
+    display: inline-block;
+}
+
+.menu__submenu {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.menu__option-submenuHolder:hover .menu__submenu {
+    background-color: red;
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+.menuII {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.menuII_submenu-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.menuII__submenuII {
+    display: none;
+}
+
+.menuII_submenu-input:checked ~ .menuII__submenuII {
+    display: flex;
+    flex-direction: column;
+}
