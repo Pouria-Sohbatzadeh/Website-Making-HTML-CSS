@@ -1,0 +1,54 @@
+@import url(reset.css);
+
+.table {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    height: 300px;
+    width: 600px;
+
+    border: 1px solid black;
+    border-collapse: collapse;
+
+
+    /* display: flex;
+    flex-direction: row; */
+    /* The <table> tag is one of the most inconvinient things in HTML, You can't apply display: flex to it, Nor any of the display: flex related style attributes, For 
+    a <table> tag will always aling each of its rows on the vertical axis */
+
+    position: relative;
+
+    /* Without this, The <tr> tags will spill out, Even if the values that I set for the height and width of the <tr> tags is well within the <table tag */
+    overflow: hidden;
+
+    margin-left: 20px;
+
+    /* Even MORE good news, You CAN'T EVEN APPLY padding:  TO THIS INFLEXIBLE MESS WITHOUT IT BEING MUCKED UP. */
+}
+
+.table__row {
+    /* display: flex;
+    flex-direction: column; */
+    /* You CAN apply display: flex to the <tr> tag if you want, But don't you DARE set flex-direction: column, For it will mess up the WHOLE <table>, You have to simply
+    do with the horizantal axis that the <tr> tag aligns the <th> and <td> tags on */
+    
+    width: 600px;
+    height: 100px;
+    /* Also you can't set a width or height with a percent measuring unit|%|, And if you DO use numbers and give the exact same height or width value as the <table> to 
+    the <tr> tag, It WILL END UP SPILLING OUT OF THE <table> TAG (With this you can at least set overflow: hidden to the <table> tag */
+    
+
+
+    background-color: grey;
+}
+
+/* And to further rub salt in the wound, Even you use numbers, And apply overflow: hidden to the <table> tag, The <tr> tag will NOT get the width:  style attribute, As
+    Long as the <th> or <td> tags within it aren't large enough to warrant it */
+/* td {
+    width: 100px;
+} */
+
+
+/* If you want to use the table tag, You have to set the size of the <table> tag around the size of the <th> and <td> tags. The only style attributes you SHOULD apply to 
+either <table> and <tr> should be the ones that effect the appearance. Like the: color: , background:  , filter: , border:  , border-radius: ,etc.... */
