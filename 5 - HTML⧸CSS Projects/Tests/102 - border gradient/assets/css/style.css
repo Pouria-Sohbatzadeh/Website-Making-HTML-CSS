@@ -1,0 +1,15 @@
+.box_gradient {
+    background: linear-gradient(-30deg, red 12%, blue);
+
+    height: 230px;
+    width: 240px;
+
+    padding: 10px;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+}
