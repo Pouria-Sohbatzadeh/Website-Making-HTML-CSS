@@ -1,0 +1,13 @@
+/* Paths */
+@import url(reset.css);
+@import url(font.css);
+@import url(color.css);
+@import url(utility.css);
+
+/* Stlyings */
+.change {
+    height: 130px;
+    width: 130px;
+
+    background-color: var(--color_name);
+}

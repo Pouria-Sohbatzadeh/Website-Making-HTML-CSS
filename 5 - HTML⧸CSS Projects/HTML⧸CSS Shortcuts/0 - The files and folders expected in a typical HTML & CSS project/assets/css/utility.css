@@ -1,0 +1,29 @@
+.container {
+
+    padding: ; 
+    /* The measurments are yours to set */
+}
+
+.overlay {
+    position: absolute;
+
+    z-index: 50;
+    /* Adjust z-index: 's value to make sure that it's greater than the z-index: value of the other content in the webpage, But less than the z-index: value of the content 
+    overlay's meant to appear with */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* For centering */
+
+    height: 100%;
+    width: 100%;
+
+    /* background-color: ;
+    background: linear-gradient(); */
+    /* The above are style attributes that can give you the visual effect you want */
+    
+    display: none;
+    /* Change this to flex in JS */
+}
+
